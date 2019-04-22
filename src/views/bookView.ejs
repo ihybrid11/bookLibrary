@@ -7,12 +7,12 @@
   <title>Storystrap Template</title>
   <meta name="generator" content="Bootply" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
   <!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-  <link href="css/styles.css" rel="stylesheet">
+  <link href="/css/styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -87,7 +87,7 @@
         <div class="panel">
           <div class="panel-body">
             <!--/stories-->
-            <%for(let index=0; index < books.length; index++){%>
+            
               <div class="row">
                 <br>
                 <div class="col-md-2 col-sm-3 text-center">
@@ -95,14 +95,14 @@
                       style="width:100px;height:100px" class="img-circle"></a>
                 </div>
                 <div class="col-md-10 col-sm-9">
-                  <h3><%=books[index].title %></h3>
+                  <h3><%=book.title %></h3>
                   <div class="row">
                     <div class="col-xs-9">
-                      <h4><span class="label label-default"><%=books[index].author %></span></h4>
+                      <h4><span class="label label-default"><%=book.author %></span></h4>
                       <h4>
                         <small style="font-family:courier,'new courier';" class="text-muted">
                           2 hours ago • 
-                          <a href="/books/<%=index%>" class="text-muted">Read More</a>
+                          <a href="" class="text-muted">Read More</a>
                         </small>
                       </h4>
                     </div>
@@ -111,7 +111,6 @@
                   <br><br>
                 </div>
               </div>
-            <%}%>
 
             <hr>
      

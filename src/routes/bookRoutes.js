@@ -191,7 +191,7 @@ const books = [
 bookRouter.route('/')
     .get((req, res) => {
         res.render(
-            'books',
+            'bookListView',
             {
                 nav: [
                     { link: '/books', title: 'Books' },
@@ -207,7 +207,7 @@ bookRouter.route('/:id')
     .get((req, res) => {
         const { id } = req.params;
         res.render(
-            'books',
+            'bookView',
             {
                 nav: [
                     { link: '/books', title: 'Books' },
